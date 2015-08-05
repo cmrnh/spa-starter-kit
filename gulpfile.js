@@ -4,7 +4,7 @@ var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var runSequence = require('run-sequence');
 
-gulp.task('default', ['clean', 'copy']);
+gulp.task('default', ['build']);
 
 gulp.task('clean', function(cb) {
   del(['build/*'], cb);
